@@ -1,0 +1,32 @@
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Libelle</th>
+          <th>Date_debut</th>
+          <th>Date_fin</th>
+          <th>Formateur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let module of modules">
+          <td>{{ module.id }}</td>
+          <td>{{ module.libelle }}</td>
+          <td>{{ module.dateDebut }}</td>
+          <td>{{ module.dateFin }}</td>
+          <td>{{ module.formateur}}</td>
+          <td>
+            <!-- <button (click)="deleteModule(module.id)" type="color: red">Delete</button>
+            <button (click)="updateModule(module.id)">Update</button>
+            <button (click)="detailModule(module.id)">Modules</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  
+
+

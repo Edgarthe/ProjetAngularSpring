@@ -1,0 +1,30 @@
+<h4>La liste des filieres</h4>
+
+
+<div>
+    <ul>
+        <li>
+            <a [routerLink]="['/filiere']">Filieres </a>
+        </li>
+        <li>
+            <a [routerLink]="['/personne', 'id']">Personnes</a>
+        </li>
+        <li>
+            <a [routerLink]="['/module']">Modules</a>
+        </li>
+    </ul>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+  <div *ngFor="let filiere of filieres">
+    <h4>{{ filiere.id }}</h4>
+    <span>{{ filiere.modules }}</span>
+    <span>{{ filiere.libelle }}</span>
+    <span>{{ filiere.stagiaire}}</span>
+  </div>
